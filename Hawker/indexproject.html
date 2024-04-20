@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/3bc8e24f41.js"></script>
+    <link rel="stylesheet" href="/Customer/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hstyle.css">
+    <title>Hawker Registration Form</title>
+</head>
+<body>
+    <section id="header">
+        <a href="indexproject.html"><img src="/Customer/img/logo1.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="indexproject.html" class="active">Home</a></li>   
+                <li><a href="blog.html">Blog</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                        <p>Phone: <br>+91 9996103246</p>
+                        <p>Email: saarthihelp@gmail.com</p>
+                        <p>Address: Jaypee Institute Of Information Tecgnology,Noida,Uttar Pradesh</p>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <form action="/Hawker/project.php" method="post">
+        <h1 class="section-p1 color-h" >Hawker Registration Form</h1>
+        <div class="container flex">
+            <div class="personal">
+                <h2 class="color-h">Personal Information</h2>
+                <div class="section">
+                    <label for="business">Name:</label>
+                    <input type="text" id="business" name="business" required>
+                </div>
+                <div class="section">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="section">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="section">
+                    <label for="aadhar">Aadhar Number:</label>
+                    <input type="text" id="aadhar" name="aadhar" required>
+                </div>
+                <div class="section">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="section">
+                    <label for="contacts">Additional Contacts:</label>
+                    <input type="text" id="contacts" name="contacts" required>
+                </div>
+            </div>
+            <div class="professional">
+                <h2 class="color-h">Professional Information</h2>
+                <div class="section">
+                    <label for="business-name">Business Name:</label>
+                    <input type="text" id="business-name" name="business_name" required>
+                </div>
+                <div class="section">
+                    <label for="categories">Product Categories:</label>
+                    <select id="categories" name="categories">
+                        <option>(Select any one)</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="crockery">Crockery</option>
+                        <option value="foods">Foods</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="crafts">Crafts</option>
+                        <option value="toiletry">Toiletry</option>
+                        <option value="clothing">Clothing</option>
+                    </select>
+                </div>
+                <div class="section">
+                    <label for="product-description">Product Descriptions:</label>
+                    <textarea id="product-description" name="product_description" rows="4" required></textarea>
+                </div>
+                <div class="section">
+                    <label for="pricing">Pricing:</label>
+                    <input type="text" id="pricing" name="pricing" required>
+                </div>
+                <div id="product-fields">
+                </div>
+           
+                <button type="button" id="add-item" class="button" name="add" >Add Item</button>
+           
+            </div>
+        </div>
+        <button type="submit" align="center" class="button section-m2" name="submit" onclick="window.location.href='/Login/Hawkerdash.html'">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+
+    <footer class="section-p1 footer-col">
+        <div class="col">
+            <img src="/Customer/img/logo1.png" alt="Saarthi" class="footer-logo">
+            <h4>Contact Us</h4>
+            <p class="footer-para"><strong>Address: </strong>Jaypee Institute Of Information Tecgnology,
+                Noida,Uttar Pradesh</p>
+            <p class="footer-para"><strong>Phone: </strong> +91 9996103246/ +91 7267990338</p>
+            <p class="footer-para"><strong>Email:</strong> saarthihelp@gmail.com </p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook"></a>
+                    <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                    <a href="https://www.pinterest.com/" class="fab fa-pinterest-p"></a>
+                    <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="/Hawker/about.html">About Us</a>
+            <a href="#">Delivery Option</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4 class="footer-para">Install App</h4>
+            <p class="footer-para">From App Store or Google Play</p>
+            <div class="row">
+                <img src="/Customer/img/pay/app.jpg" alt="Get From App Store">
+                <img src="/Customer/img/pay/play.jpg" alt="Get From Play Store">
+            </div>
+            <p class="footer-para">Secured Payment Gateways</p>
+            <img src="/Customer/img/pay/pay.png" alt="Secured Payment Gateways">
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023-Present, Saarthi Team</p>
+        </div>
+    </footer>
+    <script src="/Hawker/script.js"></script>
+</body>
+</html>
